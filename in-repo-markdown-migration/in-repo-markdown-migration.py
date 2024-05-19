@@ -1,4 +1,6 @@
 import os.path
+import logging
+logger = logging.getLogger("mkdocs")
 from mkdocs.config import config_options as mkd
 from .configitems import ConfigItems
 from mkdocs.plugins import BasePlugin

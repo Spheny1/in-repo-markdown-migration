@@ -6,8 +6,11 @@ with open("README.md", "r") as fh:
 setuptools.setup(
      name='In Repository Markdown Migrator',
      version='0.1',
-    entry_points={"mkdocs.plugins" : ["in-repo-markdown-migration = in-repo-markdown-migration.plugin:"
-        ]},
+    entry_points={
+        "mkdocs.plugins" : [
+            "in_repo_markdown_migration = in_repo_markdown_migration.plugin:InRepoMarkdownMigration"
+        ]
+    },
      author="Kyle Mathews",
      author_email="sphenyspace@gmail.com",
      description="MkDocs plugin to migrate in repository markdown files into generated documentation.",
